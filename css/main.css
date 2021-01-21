@@ -7,3 +7,34 @@
 body{
     background-color: lightblue;
 }
+
+header{
+    height: 100px;
+    width: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+#container{
+    position: relative;
+    width: 80%;
+    background-color: lightgray;
+    border: solid 1px black;
+    margin: auto;
+    text-align: center;
+}
+
+#container div{
+    width: 20%;
+    height: 250px;
+    border: solid 1px black;
+    display: inline-block;
+    margin: 0 1%;
+}
+
+.immagine1{
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+}
