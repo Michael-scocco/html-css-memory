@@ -1,4 +1,4 @@
-+{
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -8,10 +8,8 @@
 /* hoprovato a mettere diversi font non me li ha selizionati */
 body{
     background-color: lightblue;
-    /* font-family:"Roboto", sans-serif; */
-    /* font-family: 'Special Elite', sans-serif; */
-    font-family: 'Nerko One', sans-serif;
-    /* font-family: 'Special Elite', cursive; */
+    font-family: 'Nerko One', cursive;
+    font-family: 'Special Elite', cursive;
 }
 /* intestazione */
 header{
@@ -40,40 +38,52 @@ header{
     background-color: white;
 }
 
-/* inserimento fantasia */
+/* inserimento fantasia con effetto scomparsa*/
 .pattern{
     background-image: url(../img/pattern.png);
     background-size: contain;
     width: 100%;
 }
+
+.pattern:hover {
+    background-image: unset;
+}
 /* inserimento immagine */
 
 .card{
-    width: 70%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    /* display: none; */
+    width: 100%;
+    height: auto;
+    visibility:hidden;
 }
 
-/* provo ad inserire l'effetto scomparsa */
+.position:hover .card, .position:hover .write-position{
+    visibility: visible;
+}
 
-/* .position:hover .card{
-    display: block;
-} */
 
 /* regole posizionamento */
 
 .position{
     position: relative;
     text-align: center;
+    padding: 1%;
+    height: 100%;
 }
 
 .write-position{
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
+    visibility: hidden;
 }
+
+/* scomparsa scritta */
+
+.write-position:hover{
+    color: gold;
+}
+
+
+
 /* distanziamento seconda riga */
 .second-row{
     margin-top: 3%;
